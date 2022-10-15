@@ -86,6 +86,15 @@
       opacity: 1;
     }
   </style>
+  <script>
+     document.addEventListener("DOMContentLoaded", () => {
+            let btn_email = document.getElementById("btn_email");
+
+            btn_email.addEventListener("click", () => {
+              alert("이메일 작성이 완료되었습니다.");
+            });
+        });
+  </script>
 </head>
 <body>
   <section class="fir_box">
@@ -126,7 +135,7 @@
     <div><small>이메일 수신을 동의하신다면 이메일을 작성하여 주세요.</small></div>
     <form action="">
       <input type="text" name="email" class="email" placeholder="이메일을 작성하세요">
-      <input type="reset" value="입력" class="btn_email">
+      <input type="reset" id="btn_email" value="입력" class="btn_email">
     </form>
       
   </section>
